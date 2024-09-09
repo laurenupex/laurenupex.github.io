@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(0, 95, 11);
+    color: whitesmoke;
+    
+}
+
+#logo {
+    grid-area: logo;
+    font-size: 5em;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+#logo > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
+    margin: 1px;
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#title > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#slogan {
+    grid-area: slogan;
+    text-align: center;
+    margin: 1px;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#header-grid {
+    display: grid;
+    grid-template-areas: 
+    "logo title"
+    "logo slogan"
+    ;
+    grid-template-columns: 1fr 9fr;
+}
+
+#navbar {
+    background-color: forestgreen;
+    height: 5vh;
+    margin: 0px;
+}
+
+#navbar > ul {
+    grid-area: navbar;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 7px;
+}
+
+#navbar > ul > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#breaking {
+    grid-area: breaking;
+    background-color: rgba(0, 128, 0, 0.468);
+    margin: 0px;
+    padding: 20px;
+    height: 10vh;
+}
+
+#breaking > a {
+    text-decoration: none;
+    color: black;
+}
+
+#article {
+    grid-area: article;
+}
+
+#article > h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#article > nav > ul > li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+
+#menu {
+    grid-area: menu;
+    background-color: rgba(34, 139, 34, 0.755);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#menu > h2 {
+    text-decoration: underline;
+}
+
+#menu > nav > ul > li {
+    list-style: none;
+    padding: 20px;
+}
+
+#menu > nav > ul > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main {
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+    "breaking menu"
+    "article menu";
+    grid-template-columns: 3fr 1fr;
+}
+
+body > footer > nav > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer1 {
+    grid-area: footer1;
+}
+
+#footer2 {
+    grid-area: footer2
+}
+
+#footer1 > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#footer2 > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer {
+    padding-top: 3px;
+    height: 15vh;
+    display: grid;
+    grid-template-areas: 
+    "footer1 footer2";
+    grid-template-columns: 1fr 9fr;
+    background-color: rgb(0, 95, 11);
+    color: whitesmoke;
+}
